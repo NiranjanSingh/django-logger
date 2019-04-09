@@ -5,14 +5,13 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-setup(name='django-logger',
-      version='0.1.0',  # version.feature.patch (rc)release-candidate 1
+setup(name='easy-django-logger',
+      version='0.1.1',  # version.feature.patch (rc)release-candidate 1
       url='https://github.com/NiranjanSingh/django-logger',
       license='MIT',
       author='Niranjan Singh',
       author_email='niranjan32331@gmail.com',
-      description='Logging package to log formatted logs so that its readable via kibana.',
-      dependency_links=['https://pypi.deploy.loansingh.com/', ],
+      description='Django logger to log formatted logs parsable via elastic search and visualize via kibana.',
       packages=find_packages('.', exclude='logger_test'),
       install_requires=[
           'Django>=1.8,<2',
