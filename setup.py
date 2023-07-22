@@ -14,7 +14,7 @@ setup(name='easy-django-logger',
       description='Django logger to log formatted logs parsable via elastic search and visualize via kibana.',
       packages=find_packages('.', exclude='logger_test'),
       install_requires=[
-          'Django>=1.8,<2',
+          'Django>=1.8,<3',
           'arrow>=0.12.1',
           'pytz>=2017.3',
       ],
